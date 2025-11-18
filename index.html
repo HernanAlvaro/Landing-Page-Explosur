@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explosur – Turismo gamificado en Ñuble</title>
+    <link href="template style.css" rel="stylesheet">
+    <meta name="description" content="Explosur es una app móvil multiplataforma que centraliza la información turística de Ñuble, con rutas interactivas, gamificación y apoyo a pymes locales.">
+</head>
+<body id="top">
+    <!-- Enhanced Background Elements -->
+    <div class="cyber-bg">
+        <div class="cyber-gradient"></div>
+        <div class="matrix-rain" id="matrixRain"></div>
+    </div>
+    
+    <div class="particles" id="particlesContainer"></div>
+    
+    <div class="data-streams" id="dataStreams"></div>
+    
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    
+    <div class="grid-overlay">
+        <div class="grid-lines"></div>
+        <div class="grid-glow"></div>
+    </div>
+    
+    <div class="scanlines"></div>
+    <div class="noise-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#top" class="logo">Explosur</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Explosur</a></li>
+                <li><a href="#differentiators">Qué nos diferencia</a></li>
+                <li><a href="#faq">Preguntas frecuentes</a></li>
+                <li><a href="#reviews">Reseñas</a></li>
+                <li><a href="#download">Instalar app</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="nav-bottom">
+                <!-- TODO: reemplazar # por el enlace real del repo -->
+                <a href="https://https://github.com/natynavib/explosur" target="_blank" class="cyber-button">Ver en GitHub</a>
+            </div>
+            <button class="mobile-menu-button" id="mobileMenuBtn">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#top" class="mobile-menu-logo">Explosur</a>
+            <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+        </div>
+        <div class="mobile-menu-cta">
+            <a href="https://https://github.com/natynavib/explosur" target="_blank" class="cyber-button">Ver en GitHub</a>
+        </div>
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="#about">Sobre Explosur</a></li>
+                <li><a href="#differentiators">Qué nos diferencia</a></li>
+                <li><a href="#faq">Preguntas frecuentes</a></li>
+                <li><a href="#reviews">Reseñas</a></li>
+                <li><a href="#download">Instalar app</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                <span class="hero-nexus">EXPLO</span><span class="hero-flow">SUR</span>
+            </h1>
+            <p class="hero-subtitle">
+                La app turística que conecta a personas, destinos y pymes de la Región de Ñuble
+                mediante rutas interactivas, misiones gamificadas y experiencias digitales.
+            </p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn-primary">Escanear para instalar</a>
+                <a href="https://github.com/usuario/explosur" target="_blank" class="btn-secondary">Ver repositorio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Explosur (Quiénes somos + Nuestra meta) -->
+    <section class="features fade-up" id="about">
+        <div class="features-container">
+            <div class="section-header">
+                <h2 class="section-title">¿Quiénes somos?</h2>
+                <p class="section-subtitle">
+                    Explosur nace como una iniciativa tecnológica de NavibSolutions para reducir la
+                    fragmentación de la información turística en Ñuble y potenciar el turismo regional
+                    con herramientas digitales modernas.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Turismo regional con foco en Ñuble</h3>
+                    <p>
+                        Explosur se centra en visibilizar destinos rurales, culturales y emergentes que
+                        hoy tienen baja presencia digital, integrando la oferta de comunas como San Fabián,
+                        Coihueco o Cobquecura junto a destinos más conocidos como Chillán o Quillón.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Startup GovTech / TurTech</h3>
+                    <p>
+                        El proyecto se desarrolla en el contexto de una startup de base digital que impulsa
+                        soluciones GovTech y TurTech, articulando municipios, Sernatur, pymes turísticas
+                        y usuarios finales en un mismo ecosistema.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>App móvil multiplataforma</h3>
+                    <p>
+                        Explosur se construye con Flutter y Firebase, permitiendo llegar a usuarios Android
+                        e iOS con una experiencia unificada, segura y escalable, basada en datos en tiempo real.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Nuestra meta con Explosur</h3>
+                    <p>
+                        Nuestro objetivo es centralizar la información turística de Ñuble, incentivar la
+                        exploración responsable del territorio y fortalecer el vínculo económico entre
+                        turistas y pymes locales mediante gamificación, datos y experiencias inmersivas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué nos diferencia -->
+    <section class="features fade-up" id="differentiators">
+        <div class="features-container">
+            <div class="section-header">
+                <h2 class="section-title">¿Qué nos diferencia de otras apps turísticas?</h2>
+                <p class="section-subtitle">
+                    Explosur no es solo un mapa de puntos, sino una plataforma pensada para el turismo
+                    inteligente, la participación ciudadana y el desarrollo local.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Rutas inteligentes y temáticas</h3>
+                    <p>
+                        No solo mostramos destinos: creamos rutas personalizadas por naturaleza, cultura,
+                        gastronomía o historia, adaptadas al tiempo y preferencias de cada visitante.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Gamificación con impacto local</h3>
+                    <p>
+                        Los usuarios completan misiones, trivias y desafíos para acumular puntos que
+                        pueden canjear en pymes asociadas, promoviendo el consumo local y experiencias
+                        más significativas.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Conexión directa con pymes y municipios</h3>
+                    <p>
+                        Explosur integra información validada por municipios y emprendedores, permitiendo
+                        mantener datos oficiales, actualizados y alineados con la estrategia turística regional.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Datos para la toma de decisiones</h3>
+                    <p>
+                        La plataforma genera indicadores sobre rutas utilizadas, misiones completadas y
+                        comportamiento turístico, útiles para la planificación pública y el diseño de políticas
+                        de turismo sostenible.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Arquitectura cloud y escalabilidad</h3>
+                    <p>
+                        Explosur está pensada para crecer: partir en Ñuble y escalar a otras regiones
+                        manteniendo una infraestructura cloud-native robusta y de bajo costo operativo.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Turismo responsable y descentralizado</h3>
+                    <p>
+                        Incentivamos la descongestión de destinos saturados y la exploración de nuevos
+                        territorios, promoviendo un turismo más sostenible y equilibrado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="pricing fade-up" id="faq">
+        <div class="pricing-container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas frecuentes</h2>
+                <p class="section-subtitle">
+                    Resolvemos las dudas más comunes sobre Explosur y el futuro lanzamiento de la app.
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-name">¿Qué es Explosur?</div>
+                    <p>
+                        Explosur es una aplicación móvil multiplataforma que centraliza la información
+                        turística de la Región de Ñuble, ofreciendo rutas interactivas, misiones gamificadas
+                        y recompensas en comercios locales.
+                    </p>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="plan-name">¿En qué etapa se encuentra el proyecto?</div>
+                    <p>
+                        Actualmente Explosur se encuentra en fase de desarrollo y validación académica.
+                        Esta landing page recoge el contexto del proyecto y será el punto de entrada para
+                        futuras pruebas piloto y descargas.
+                    </p>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="plan-name">¿La app será gratuita para turistas?</div>
+                    <p>
+                        Sí. La app está pensada para que las personas puedan explorar Ñuble sin costo de
+                        suscripción. El modelo de negocio se apoya en alianzas público–privadas, rutas
+                        patrocinadas y visibilidad para pymes.
+                    </p>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="plan-name">¿Necesito conexión a internet?</div>
+                    <p>
+                        Explosur utilizará internet para cargar mapas, rutas y misiones. Sin embargo,
+                        se proyecta un modo offline parcial para consultar destinos ya descargados y
+                        rutas básicas cuando la conectividad sea limitada.
+                    </p>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="plan-name">¿Qué tipo de experiencias encontraré?</div>
+                    <p>
+                        Podrás descubrir rutas por naturaleza, patrimonio, gastronomía y cultura local,
+                        además de desafíos, trivias y misiones que premian tu participación responsable
+                        con el territorio.
+                    </p>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="plan-name">¿Cómo puedo colaborar con Explosur?</div>
+                    <p>
+                        Si eres municipio, pyme o institución interesada en participar, puedes escribirnos
+                        a través del formulario de contacto al final de la página para coordinar pruebas
+                        pilotos, datos turísticos o alianzas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas (proyecciones / early adopters) -->
+    <section class="stats fade-up" id="reviews">
+        <div class="stats-container">
+            <div class="section-header">
+                <h2 class="section-title">Lo que esperamos que digan de Explosur</h2>
+                <p class="section-subtitle">
+                    Aún no lanzamos oficialmente la app, pero estas son las experiencias que queremos
+                    construir junto a turistas, pymes y municipios.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">“</span>
+                    <span class="stat-label">
+                        Explosur convirtió nuestra escapada de fin de semana en una ruta completa
+                        por Ñuble, con lugares que nunca habríamos encontrado en redes sociales.
+                        <br><strong>— Pareja turista, Santiago (proyección)</strong>
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">“</span>
+                    <span class="stat-label">
+                        Gracias a las misiones y puntos, más visitantes llegaron a mi emprendimiento
+                        rural y pudimos dar a conocer nuestros productos locales.
+                        <br><strong>— Emprendedora local, Quillón (proyección)</strong>
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">“</span>
+                    <span class="stat-label">
+                        La información georreferenciada y los indicadores que entrega Explosur
+                        son una base concreta para planificar mejor el turismo comunal.
+                        <br><strong>— Profesional municipal, Ñuble (proyección)</strong>
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">“</span>
+                    <span class="stat-label">
+                        Una app que mezcla turismo, datos y sostenibilidad, alineada con los desafíos
+                        de digitalización del territorio.
+                        <br><strong>— Equipo académico Explosur</strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Escanear para instalar app (QR placeholder) -->
+    <section class="contact fade-up" id="download">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Escanear para instalar Explosur</h2>
+                <p class="section-subtitle">
+                    Muy pronto podrás instalar la app directamente desde este código QR.
+                    Por ahora, dejamos preparado el espacio y el flujo de descarga.
+                </p>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label>1. Escanea el código QR</label>
+                        <p>
+                            Desde tu teléfono, abre la cámara o tu app de lector de QR y apunta al código.
+                            Serás redirigido al enlace oficial de descarga (GitHub Releases, Play Store o
+                            instalador oficial de Explosur).
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>2. Confirma la descarga / instalación</label>
+                        <p>
+                            Una vez redirigido, podrás elegir si descargas el archivo de instalación
+                            (APK / AAB) o instalas la app desde la tienda oficial, según el flujo que
+                            definamos en producción.
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>3. Disfruta de Explosur</label>
+                        <p>
+                            Explora rutas, completa misiones gamificadas y descubre nuevas experiencias
+                            en la Región de Ñuble.
+                        </p>
+                    </div>
+
+                    <div class="form-group" style="text-align:center;">
+                        <!-- TODO: reemplazar la imagen por el QR real -->
+                        <img src="assets/qr-explosur-placeholder.png"
+                             alt="Código QR de descarga de Explosur"
+                             style="max-width:220px;width:100%;border-radius:12px;opacity:0.9;">
+                        <p style="margin-top:0.75rem;font-size:0.9rem;opacity:0.8;">
+                            Imagen de referencia. El código QR definitivo se actualizará al publicar
+                            la primera versión instalable de la app.
+                        </p>
+                    </div>
+
+                    <div class="form-group form-group-buttons">
+                        <a href="https://github.com/usuario/explosur/releases"
+                           target="_blank"
+                           class="btn-primary">
+                            Abrir descargas en GitHub
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            Quiero<br>contactarme
+                        </a>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact fade-up" id="contact">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">
+                    ¿Eres municipio, pyme turística o institución interesada en Explosur?
+                    Envíanos un mensaje y coordinemos una conversación.
+                </p>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.cl" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Cuéntanos cómo te gustaría colaborar con Explosur..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-submit">Enviar mensaje</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">Sobre Explosur</a>
+                <span class="footer-separator">•</span>
+                <a href="#differentiators">Qué nos diferencia</a>
+                <span class="footer-separator">•</span>
+                <a href="#faq">Preguntas frecuentes</a>
+                <span class="footer-separator">•</span>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Explosur / NavibSolutions. Todos los derechos reservados.</p>
+                <p class="footer-credit">
+                    Basado en template de <a href="https://templatemo.com" target="_blank" rel="noopener nofollow">TemplateMo</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="template scripts.js"></script>
+</body>
+</html>
